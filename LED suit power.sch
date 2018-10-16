@@ -1020,8 +1020,6 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    6050 6800
 	1    0    0    -1  
 $EndComp
-Text GLabel 5400 6800 0    50   Input ~ 0
-VIN
 Wire Wire Line
 	5400 6800 5550 6800
 $Comp
@@ -1361,4 +1359,15 @@ Wire Wire Line
 	7150 2150 6950 2150
 Connection ~ 7150 2150
 Connection ~ 6950 2150
+$Comp
+L power:+5V #PWR0114
+U 1 1 5BC6953C
+P 5400 6800
+F 0 "#PWR0114" H 5400 6650 50  0001 C CNN
+F 1 "+5V" H 5415 6973 50  0000 C CNN
+F 2 "" H 5400 6800 50  0001 C CNN
+F 3 "" H 5400 6800 50  0001 C CNN
+	1    5400 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

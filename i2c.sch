@@ -85,13 +85,13 @@ PIN3
 Text GLabel 3000 3650 3    50   Input ~ 0
 PIN4
 Text GLabel 4000 3650 3    50   Input ~ 0
-PIN9
+PIN5
 Text GLabel 4100 3650 3    50   Input ~ 0
-PIN10
+PIN6
 Text GLabel 5100 3650 3    50   Input ~ 0
-PIN11
+PIN9
 Text GLabel 5200 3650 3    50   Input ~ 0
-PIN12
+PIN10
 Text GLabel 6200 3650 3    50   Input ~ 0
 PIN15
 Text GLabel 6300 3650 3    50   Input ~ 0
