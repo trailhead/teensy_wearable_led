@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:LED suit power-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LEDpower:OKL2-T_6-W12P-C U2
+L LED_suit_power:OKL2-T_6-W12P-C U2
 U 1 1 5BB19CFE
 P 3650 3400
 F 0 "U2" H 3650 2614 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 3650 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LEDpower:OKL2-T_6-W12P-C U3
+L LED_suit_power:OKL2-T_6-W12P-C U3
 U 1 1 5BB1A3A6
 P 5400 3400
 F 0 "U3" H 5400 2614 50  0000 C CNN
@@ -37,7 +37,7 @@ F 3 "" H 5400 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LEDpower:OKL2-T_6-W12P-C U5
+L LED_suit_power:OKL2-T_6-W12P-C U5
 U 1 1 5BB1A3FF
 P 7150 3400
 F 0 "U5" H 7150 2614 50  0000 C CNN
@@ -48,7 +48,7 @@ F 3 "" H 7150 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LEDpower:OKL2-T_6-W12P-C U6
+L LED_suit_power:OKL2-T_6-W12P-C U6
 U 1 1 5BB1A41F
 P 8900 3400
 F 0 "U6" H 8900 2614 50  0000 C CNN
@@ -59,7 +59,7 @@ F 3 "" H 8900 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LEDpower:XT-60 J7
+L LED_suit_power:XT-60 J7
 U 1 1 5BB1A809
 P 7350 1350
 F 0 "J7" H 7628 1401 50  0000 L CNN
@@ -127,7 +127,7 @@ F 3 "" H 3650 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LEDpower:XT-60 J2
+L LED_suit_power:XT-60 J2
 U 1 1 5BB1BF87
 P 4500 1800
 F 0 "J2" V 4565 1672 50  0000 R CNN
@@ -138,7 +138,7 @@ F 3 "" H 4500 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LEDpower:XT-60 J3
+L LED_suit_power:XT-60 J3
 U 1 1 5BB1C05B
 P 6250 1800
 F 0 "J3" H 6269 1535 50  0000 C CNN
@@ -149,7 +149,7 @@ F 3 "" H 6250 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LEDpower:XT-60 J5
+L LED_suit_power:XT-60 J5
 U 1 1 5BB1C13C
 P 8000 1750
 F 0 "J5" V 8065 1622 50  0000 R CNN
@@ -160,7 +160,7 @@ F 3 "" H 8000 1750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LEDpower:XT-60 J6
+L LED_suit_power:XT-60 J6
 U 1 1 5BB1C1FD
 P 9750 1750
 F 0 "J6" V 9815 1622 50  0000 R CNN
@@ -209,7 +209,7 @@ Connection ~ 6300 2150
 Text Label 7000 1300 0    50   ~ 0
 VIN
 $Comp
-L teensy:Teensy3.2 U7
+L LED-suit-power-rescue:Teensy3.2-teensy U7
 U 1 1 5BB24CC2
 P 3700 6200
 F 0 "U7" H 3700 4613 60  0000 C CNN
@@ -220,7 +220,7 @@ F 3 "" H 3700 5400 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LEDpower:OKL2-T_6-W12P-C U1
+L LED_suit_power:OKL2-T_6-W12P-C U1
 U 1 1 5BB2F58D
 P 1900 3400
 F 0 "U1" H 1900 2614 50  0000 C CNN
@@ -256,7 +256,7 @@ F 3 "" H 1250 2150 50  0001 C CNN
 $EndComp
 Connection ~ 1900 2150
 $Comp
-L LEDpower:XT-60 J1
+L LED_suit_power:XT-60 J1
 U 1 1 5BB2F5A6
 P 2750 1800
 F 0 "J1" V 2815 1672 50  0000 R CNN
@@ -406,13 +406,10 @@ Wire Wire Line
 	6400 2700 6850 2700
 Wire Wire Line
 	5100 2400 6850 2400
-Connection ~ 6850 2700
 Wire Wire Line
 	4650 2700 5100 2700
-Connection ~ 5100 2700
 Wire Wire Line
 	1150 2700 1600 2700
-Connection ~ 1600 2700
 $Comp
 L power:GND #PWR0108
 U 1 1 5BB5439A
@@ -437,7 +434,6 @@ F 3 "" H 2900 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 2700 3350 2700
-Connection ~ 3350 2700
 $Comp
 L power:GND #PWR0110
 U 1 1 5BB584C4
@@ -464,7 +460,6 @@ Wire Wire Line
 	8150 2700 8600 2700
 Wire Wire Line
 	6850 2400 8600 2400
-Connection ~ 8600 2700
 $Comp
 L power:GND #PWR0113
 U 1 1 5BB5DEC3
@@ -597,16 +592,16 @@ AGND
 $Comp
 L power:+5V #PWR0129
 U 1 1 5BB97B09
-P 2000 5350
-F 0 "#PWR0129" H 2000 5200 50  0001 C CNN
-F 1 "+5V" H 2015 5523 50  0000 C CNN
-F 2 "" H 2000 5350 50  0001 C CNN
-F 3 "" H 2000 5350 50  0001 C CNN
-	1    2000 5350
+P 1700 5350
+F 0 "#PWR0129" H 1700 5200 50  0001 C CNN
+F 1 "+5V" H 1715 5523 50  0000 C CNN
+F 2 "" H 1700 5350 50  0001 C CNN
+F 3 "" H 1700 5350 50  0001 C CNN
+	1    1700 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 5350 2000 5400
+	1700 5350 1700 5400
 Wire Wire Line
 	2000 5400 2700 5400
 $Comp
@@ -1186,7 +1181,6 @@ F 3 "~" H 2550 2000 50  0001 C CNN
 	1    2550 2000
 	1    0    0    -1  
 $EndComp
-Connection ~ 2700 2000
 $Comp
 L Device:R_Small R30
 U 1 1 5BC4D1AA
@@ -1351,10 +1345,6 @@ F 3 "" H 9100 1950 50  0001 C CNN
 	1    9100 1950
 	1    0    0    -1  
 $EndComp
-Connection ~ 7950 1950
-Connection ~ 9700 1950
-Connection ~ 6200 2000
-Connection ~ 4450 2000
 Wire Wire Line
 	7150 2150 6950 2150
 Connection ~ 7150 2150
@@ -1370,4 +1360,59 @@ F 3 "" H 5400 6800 50  0001 C CNN
 	1    5400 6800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D_Schottky D6
+U 1 1 5BCA0E97
+P 1850 5400
+F 0 "D6" H 1850 5616 50  0000 C CNN
+F 1 "D_Schottky" H 1850 5525 50  0000 C CNN
+F 2 "Diodes_SMD:D_PowerDI-123" H 1850 5400 50  0001 C CNN
+F 3 "~" H 1850 5400 50  0001 C CNN
+	1    1850 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J10
+U 1 1 5BCB78DD
+P 6600 5250
+F 0 "J10" V 6660 5390 50  0000 L CNN
+F 1 "Conn_01x03_Male" V 6751 5390 50  0000 L CNN
+F 2 "Connectors_JST:JST_XH_B03B-XH-A_03x2.50mm_Straight" H 6600 5250 50  0001 C CNN
+F 3 "~" H 6600 5250 50  0001 C CNN
+	1    6600 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0149
+U 1 1 5BCC4AFC
+P 5950 5350
+F 0 "#PWR0149" H 5950 5100 50  0001 C CNN
+F 1 "GND" H 5955 5177 50  0000 C CNN
+F 2 "" H 5950 5350 50  0001 C CNN
+F 3 "" H 5950 5350 50  0001 C CNN
+	1    5950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0150
+U 1 1 5BCC4E31
+P 5950 5100
+F 0 "#PWR0150" H 5950 4950 50  0001 C CNN
+F 1 "+3.3V" H 5965 5273 50  0000 C CNN
+F 2 "" H 5950 5100 50  0001 C CNN
+F 3 "" H 5950 5100 50  0001 C CNN
+	1    5950 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5350 5950 5250
+Wire Wire Line
+	5950 5250 6400 5250
+Wire Wire Line
+	6400 5150 5950 5150
+Wire Wire Line
+	5950 5150 5950 5100
+Text GLabel 6400 5350 0    50   Input ~ 0
+PIN0
+Connection ~ 2700 2000
 $EndSCHEMATC
